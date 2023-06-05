@@ -1,4 +1,9 @@
-import Discount.FULL
+package Users
+
+import Ticket.Ticket
+import Utility.Discount
+import Utility.Discount.FULL
+
 import java.io.File
 import java.util.UUID
 
@@ -26,7 +31,7 @@ class User(val name: String,
   }
 
   override def toString: String = {
-    s"User(name=$name, surname=$surname, age=$age, discount=$discount, userFolderUrl=$userFolderUrl, points=$points, actualTickets=$actualTickets)"
+    s"Users.User(name=$name, surname=$surname, age=$age, discount=$discount, userFolderUrl=$userFolderUrl, points=$points, actualTickets=$actualTickets)"
   }
 }
-//val newUser = User("John", "Doe", 25), opcjinalnie dodatkowo podać discount
+//val newUser = Users.User("John", "Doe", 25), opcjinalnie dodatkowo podać discount
