@@ -1,3 +1,6 @@
+package Ticket
+import Utility.dateStruct
+
 import java.util.Calendar
 
 class Ticket(val discount:Double,// who is let to use ticket
@@ -8,12 +11,14 @@ class Ticket(val discount:Double,// who is let to use ticket
              val city:String,
              val ticketURL:String)
 {
+  def timeLeft(): dateStruct={
+    return new dateStruct(0,0,0)
+  }
   def isValid(): Boolean = {
     
       true
   }
   
-  def timeLeft(): Int = {
-    0
-  }
+  
 }
+
