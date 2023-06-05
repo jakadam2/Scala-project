@@ -9,7 +9,11 @@ class Ticket(val discount:Double,// who is let to use ticket
              val ticketURL:String)
 {
   def isValid(): Boolean = {
-
+    
       true
+  }
+  
+  def timeLeft(): Int = {
+    0
   }
 }

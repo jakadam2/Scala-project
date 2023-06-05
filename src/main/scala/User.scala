@@ -10,6 +10,7 @@ class User(val name: String,
            var points: Int = 0,
            var actualTickets: List[Ticket]) {
 
+
   require(name.nonEmpty, "Name must not be empty")
   require(surname.nonEmpty, "Surname must not be empty")
   require(age > 0, "Age must be greater than 0")
@@ -29,4 +30,4 @@ class User(val name: String,
     s"User(name=$name, surname=$surname, age=$age, discount=$discount, userFolderUrl=$userFolderUrl, points=$points, actualTickets=$actualTickets)"
   }
 }
-//val newUser = User("John", "Doe", 25), opcjinalnie dodatkowo podać discount
+
