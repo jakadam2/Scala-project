@@ -1,6 +1,6 @@
 package Utility
 
-enum Discount(val discointValue: Double):
+enum Discount(val discountValue: Double):
   case SENIOR extends Discount(0.02)
   case ACADEMIC extends Discount(0.05)
   case STUDENT extends Discount(0.03)

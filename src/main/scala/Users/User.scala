@@ -7,7 +7,7 @@ import Utility.Discount.FULL
 import java.io.File
 import java.util.UUID
 
-class User(val name: String,
+case class User(val name: String,
            val surname: String,
            val age: Int,
            val discount: Discount = FULL,
