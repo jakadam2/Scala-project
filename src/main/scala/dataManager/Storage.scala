@@ -38,9 +38,7 @@ class Storage (var TicketsAvialiable: List[Ticket]){
     Files.deleteIfExists(Paths.get(ticketFile.toURI))
   }
 
-  def filterTickets(filter: TicketFilter): List[Ticket] = {
-    filter.applyFilter(TicketsAvailable)
-  }
+
 
 }
 

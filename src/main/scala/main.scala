@@ -1,9 +1,9 @@
 import scala.collection.mutable.ListBuffer
 import scala.io.StdIn.readLine
-
+import Users.User
 @main
 def main(): Unit = {
-  val users = ListBuffer()
+  val users = ListBuffer[User]()
   while (true){
     var command = readLine()
     var splitedCommand = command.split(" ")

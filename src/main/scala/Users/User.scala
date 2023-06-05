@@ -11,9 +11,9 @@ class User(val name: String,
            val surname: String,
            val age: Int,
            val discount: Discount = FULL,
-           var userFolderUrl: String,
+           var userFolderUrl: String = "",
            var points: Int = 0,
-           var actualTickets: List[Ticket]) {
+           var actualTickets: List[Ticket] = List[Ticket]()) {
 
 
   require(name.nonEmpty, "Name must not be empty")
