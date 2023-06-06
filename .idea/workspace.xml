@@ -6,24 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="dc3af885-1014-4ea9-9ccd-321ecd05219c" name="Changes" comment="first version of tictekst">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Ticket/DiscountFilter.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Ticket/DiscountFilter.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/Ticket/Ticket.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Ticket/Ticket.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Users/User.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Users/User.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Utility/Discount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Utility/Discount.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/dataManager/Storage.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataManager/Storage.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/main.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Ticket/Ticket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Ticket/Ticket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Ticket/Ticket.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Ticket/Ticket.tasty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Users/User$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Users/User$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Users/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Users/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Users/User.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Users/User.tasty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/dataManager/Storage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/dataManager/Storage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/dataManager/Storage.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/dataManager/Storage.tasty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/main$package$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/main$package$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/main$package.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/main$package.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/main$package.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/main$package.tasty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/main.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/main.tasty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Utility/dateStruct.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Utility/dateStruct.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +80,9 @@
       <workItem from="1685963006625" duration="8819000" />
       <workItem from="1685972182981" duration="979000" />
       <workItem from="1685989627984" duration="2761000" />
-      <workItem from="1685995468802" duration="2676000" />
+      <workItem from="1685995468802" duration="2952000" />
+      <workItem from="1686042919125" duration="29000" />
+      <workItem from="1686043459606" duration="1333000" />
     </task>
     <task id="LOCAL-00001" summary="first version of tictekst">
       <created>1685966008739</created>
