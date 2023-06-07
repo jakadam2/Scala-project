@@ -7,13 +7,14 @@ import Utility.Discount.FULL
 import java.io.File
 import java.util.UUID
 
-class User(val name: String,
+case class User(val name: String,
            val surname: String,
            val age: Int,
            val discount: Discount = FULL,
-           var userFolderUrl: String,
+           var userFolderUrl: String = "",
            var points: Int = 0,
-           var actualTickets: List[Ticket]) {
+           var actualTickets: List[Ticket] = List[Ticket]()) {
+
 
   require(name.nonEmpty, "Name must not be empty")
   require(surname.nonEmpty, "Surname must not be empty")
@@ -34,4 +35,4 @@ class User(val name: String,
     s"Users.User(name=$name, surname=$surname, age=$age, discount=$discount, userFolderUrl=$userFolderUrl, points=$points, actualTickets=$actualTickets)"
   }
 }
-//val newUser = Users.User("John", "Doe", 25), opcjinalnie dodatkowo podać discount
+

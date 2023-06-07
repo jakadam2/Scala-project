@@ -3,14 +3,20 @@ package dataManager
 
 import Ticket.{Ticket, TicketFilter}
 import Users.User
+import jdk.jshell.spi.ExecutionControl.NotImplementedException
 
 import java.io.{File, FileOutputStream}
 import java.nio.channels.Channels
 import java.nio.file.{Files, Paths}
+import scala.collection.mutable.ListBuffer
 
-class Storage (var TicketsAvialiable: List[Ticket]){
+class Storage (var TicketsAvialiable: ListBuffer[Ticket] = ListBuffer[Ticket]()){ //zmieniłem liste na listbuffer bo go da się modyfikować ale jak cos to tu moze byc co innego  
   def updateStorage(): Unit = {
     TicketsAvialiable = TicketsAvialiable.filter(_.isValid())
+  }
+  
+  def filterTickets(filter:TicketFilter):List[Ticket] = {
+    throw NotImplementedException("wzialem to z sciagawki na dole")//zakladam ze zwraca listę biletów które spełniają filtr
   }
 
   def transferTicket(user1: User, user2: User, ticket: Ticket, copyURL: String): Unit = {
@@ -38,9 +44,7 @@ class Storage (var TicketsAvialiable: List[Ticket]){
     Files.deleteIfExists(Paths.get(ticketFile.toURI))
   }
 
-  def filterTickets(filter: TicketFilter): List[Ticket] = {
-    filter.applyFilter(TicketsAvailable)
-  }
+
 
 }
 

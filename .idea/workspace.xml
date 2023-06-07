@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc3af885-1014-4ea9-9ccd-321ecd05219c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/Discount.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/Ticket.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/dateStruct.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/ticket-dealer-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/ticket-dealer-build.iml" afterDir="false" />
+    <list default="true" id="dc3af885-1014-4ea9-9ccd-321ecd05219c" name="Changes" comment="first version of tictekst">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/update/update_cache_3/output" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/update/update_cache_3/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/_global/updateClassifiers/_global/streams/update_cache_3/output" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/updateClassifiers/_global/streams/update_cache_3/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Ticket/Ticket.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Ticket/Ticket.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Utility/dateStruct.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Utility/dateStruct.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,8 +77,21 @@
       <workItem from="1683566606387" duration="464000" />
       <workItem from="1683877181285" duration="14000" />
       <workItem from="1684404817601" duration="2220000" />
-      <workItem from="1685963006625" duration="2710000" />
+      <workItem from="1685963006625" duration="8819000" />
+      <workItem from="1685972182981" duration="979000" />
+      <workItem from="1685989627984" duration="2761000" />
+      <workItem from="1685995468802" duration="2952000" />
+      <workItem from="1686042919125" duration="29000" />
+      <workItem from="1686043459606" duration="1333000" />
     </task>
+    <task id="LOCAL-00001" summary="first version of tictekst">
+      <created>1685966008739</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685966008739</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,5 +107,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first version of tictekst" />
+    <option name="LAST_COMMIT_MESSAGE" value="first version of tictekst" />
   </component>
 </project>
