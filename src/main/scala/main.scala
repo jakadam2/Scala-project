@@ -3,9 +3,18 @@ import scala.io.StdIn.readLine
 import Users.User
 import dataManager.Storage
 import Ticket.*
+import Utility.dateStruct
+
+def parseDateStruct(dateString: String): dateStruct = {
+  val parts = dateString.split(":")
+  val hour = parts(0).toInt
+  val minute = parts(1).toInt
+  val seconds = parts(2).toInt
+  new dateStruct(hour, minute, seconds)
+}
 @main
 def main(): Unit = {
-  val users = ListBuffer[User]()
+  val users = ListBuffer[User]() //FIXME: czy nie lepiej miec tyhc userow w storage?
   val storage = Storage()
   while (true){
     var command = readLine()
@@ -31,15 +40,18 @@ def main(): Unit = {
             User("Noone","Noone",6)
           }
         }
-        var routeNrFilter = RouteNumberFilter(routeNr)
-        var timeFilter = TimeLeftFilter(reqTime.toInt)
-        var discountFilter = DiscountFilter(reqUser.discount.discountValue)
-        var finalFilter = CompositeFilter(List(routeNrFilter,timeFilter,discountFilter))
-        var matchedTickets = storage.filterTickets(finalFilter)
+        //FIXME: nwm czy sie tak da ale można jakoś zorbić żeby dało radę podać kilka filtrów
+        // tych samych, np żęby filtorwało różne zniżki naraz, w sensie, i student i full (zobacz storage na dole).
+        // Dodatkowo można przekazać pustą wartość do tego filtra i wtedy się przeszuka tylko
+        // po jednym filtrze. A jak sie nie da to tak jak jest tez jest git chyba
+        // required time powinno byc chyba dateStruct, zorbilem jakis parser jak cos
+        // dodalem w enumie parser zeby mozna discout  podwac  jako Full czy słownie jakos
+
+        var matchedTickets = storage.filterTickets(Some(parseDateStruct(reqTime)),Some(routeNr), None,Some(reqUser.discount))
         if(matchedTickets.isEmpty)println("NOT FOUND MATCHING TICKETS")
         else{
           var ticket = matchedTickets.head
-          storage.transferTicket(reqUser,ticket.user,ticket,ticket.user.userFolderUrl)
+          storage.transferTicket(reqUser,ticket.user,ticket) //FIXME: tu chyba na odwrut
         }
       }
 
