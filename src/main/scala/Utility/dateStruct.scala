@@ -11,4 +11,7 @@ class dateStruct (val hour:Int,val minute:Int,val seconds:Int) {
     subVal %= 60
     dateStruct(hours,minutes,subVal)
   }
+  def getmyVal(): Int ={
+    return myVal;
+  }
 }

@@ -1,61 +1,96 @@
 package dataManager
 
 
-import Ticket.{Ticket, TicketFilter}
+import Ticket.{Ticket, TicketFilter,TimeLeftFilter,RouteNumberFilter,CityFilter,DiscountFilter,CompositeFilter}
 import Users.User
+import Utility.Discount
 import jdk.jshell.spi.ExecutionControl.NotImplementedException
+import Utility.dateStruct
 
-import java.io.{File, FileOutputStream}
+import java.io.{File, FileOutputStream,FileInputStream}
 import java.nio.channels.Channels
 import java.nio.file.{Files, Paths}
 import scala.collection.mutable.ListBuffer
 
 class Storage (var TicketsAvialiable: ListBuffer[Ticket] = ListBuffer[Ticket]()){ //zmieniłem liste na listbuffer bo go da się modyfikować ale jak cos to tu moze byc co innego  
-  def updateStorage(): Unit = {
+  def updateStorage(): Unit = { //TODO: zbiera wszystkie bilety z uzytkownikow
     TicketsAvialiable = TicketsAvialiable.filter(_.isValid())
   }
-  
-  def filterTickets(filter:TicketFilter):List[Ticket] = {
-    throw NotImplementedException("wzialem to z sciagawki na dole")//zakladam ze zwraca listę biletów które spełniają filtr
+
+  def filterTickets( //przykladowe wywoalnie nizej
+                     dateStruct: Option[dateStruct] = None,
+                     routeNumber: Option[String] = None,
+                     location: Option[String] = None,
+                     discount: Option[Discount] = None
+                   ): ListBuffer[Ticket] = {
+    updateStorage()
+    val filters = ListBuffer[TicketFilter]()
+
+    dateStruct.foreach { ds =>
+      val timeLeftFilter = new TimeLeftFilter(ds.getmyVal())
+      filters += timeLeftFilter
+    }
+
+    routeNumber.foreach { number =>
+      val routeNumberFilter = new RouteNumberFilter(number)
+      filters += routeNumberFilter
+    }
+
+    location.foreach { loc =>
+      val cityFilter = new CityFilter(loc)
+      filters += cityFilter
+    }
+
+    discount.foreach { disc =>
+      val discountFilter = new DiscountFilter(disc.discountValue)
+      filters += discountFilter
+    }
+
+    val compositeFilter = new CompositeFilter(filters)
+    val filteredTickets = compositeFilter.applyFilter(TicketsAvialiable)
+    filteredTickets
   }
 
-  def transferTicket(user1: User, user2: User, ticket: Ticket, copyURL: String): Unit = {
-    require(user1.actualTickets.contains(ticket), user1.name +" " + user1.surname + " must possess the ticket.")
 
-    // Remove the ticket from User1
-    user1.actualTickets = user1.actualTickets.filterNot(_ == ticket)
+  def transferTicket(user1: User, user2: User, ticket: Ticket): Unit = { //z user1 do user2 przkazuje ticket
+    require(user1.userTickets.contains(ticket), user1.name +" " + user1.surname + " must possess the ticket.")
+    // usuwa ticket z listy w user1
+    //to powinno dzialac tak ze kopjuje z folderu usera1 do folderu usera2 plik o takiej nazwie co ticket.url
+    //zmienia sciezke dostepu do ticketu 
+    //dodaje do listy usera2 ten ticket
+    
+    user1.userTickets = user1.userTickets.filterNot(_ == ticket)
+    
+    val sourceFile = new File(ticket.ticketURL)
+    val destinationFile = new File(user2.userFolderUrl)
 
-    // Add the ticket to User2
-    user2.actualTickets = user2.actualTickets :+ ticket
+    val sourceChannel = new FileInputStream(sourceFile).getChannel
+    val destinationChannel = new FileOutputStream(destinationFile).getChannel
 
-    // Create a copy of the ticket file at the specified URL
-    val ticketFile = new File(ticket.ticketURL)
-    val copyFile = new File(copyURL)
+    destinationChannel.transferFrom(sourceChannel, 0, sourceChannel.size())
 
-    val ticketChannel = new FileOutputStream(ticketFile).getChannel
-    val copyChannel = new FileOutputStream(copyFile).getChannel
+    sourceChannel.close()
+    destinationChannel.close()
 
-    ticketChannel.transferTo(0, ticketChannel.size(), copyChannel)
+    ticket.ticketURL = user2.userFolderUrl + ticket.ticketFileName
+    user2.userTickets = user2.userTickets :+ ticket
 
-    ticketChannel.close()
-    copyChannel.close()
-
-    // Delete the original file
-    Files.deleteIfExists(Paths.get(ticketFile.toURI))
+    Files.deleteIfExists(Paths.get(sourceFile.toURI))
   }
 
 
 
 }
 
-//val storage = new Storage(...)
-//val timeLeftFilter = new TimeLeftFilter(60) // Filtruje bilety, którym pozostało mniej niż 60 sekund
-//val routeNumberFilter = new RouteNumberFilter("123") // Filtruje bilety dla konkretnej trasy
-//val cityFilter = new CityFilter("New York") // Filtruje bilety dla konkretnej lokalizacji
-//val discountFilter = new DiscountFilter(0.2) // Filtruje bilety z określonym rabatem
+//wywoałnie przkładowego filtrowania:
+//val date = DateStruct(hour = 12, minute = 0, seconds = 0)
+//val routeNumber = "123"
+//val location = "New York"
+//val discounts = List(Discount.SENIOR, Discount.STUDENT)
 //
-//// Tworzenie kompozytowego filtru łączącego kilka filtrów
-//val compositeFilter = new CompositeSearch(List(timeLeftFilter, routeNumberFilter, cityFilter, discountFilter))
-//
-//// Filtrowanie biletów za pomocą kompozytowego filtru
-//val filteredTickets = storage.filterTickets(compositeFilter)
+//val filteredTickets = storage.filterTickets(
+//  dateStruct = Some(date),
+//  routeNumber = Some(routeNumber),
+//  location = Some(location),
+//  discount = Some(discounts)
+//)

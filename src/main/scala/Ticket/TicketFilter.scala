@@ -2,6 +2,8 @@ package Ticket
 
 
 
+import scala.collection.mutable.ListBuffer
+
 trait TicketFilter {
-  def applyFilter(tickets: List[Ticket]): List[Ticket]
+  def applyFilter(tickets: ListBuffer[Ticket]): ListBuffer[Ticket]
 }
