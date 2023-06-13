@@ -4,6 +4,7 @@ import Users.User
 import dataManager.Storage
 import Ticket.*
 import Utility.dateStruct
+import Utility.waitingRoomEnum
 
 def parseDateStruct(dateString: String): dateStruct = {
   val parts = dateString.split(":")
@@ -12,15 +13,26 @@ def parseDateStruct(dateString: String): dateStruct = {
   val seconds = parts(2).toInt
   new dateStruct(hour, minute, seconds)
 }
+
+
 @main
 def main(): Unit = {
-  val users = ListBuffer[User]() //FIXME: czy nie lepiej miec tyhc userow w storage?
+
+  val users = ListBuffer[User]()
+  def findUser(name:String,surname:String) = {
+    var maybeReqUser = users.find(u => {
+      u.name == name && u.surname == surname
+    })
+    maybeReqUser
+  }
+
   val storage = Storage()
   while (true){
     var command = readLine()
     var splitedCommand = command.split(" ")
 
     splitedCommand match {
+
       case Array("add","user",name,surname,age) => {
         println("USER ADDED")
         println("NAME: ".concat(name))
@@ -30,46 +42,43 @@ def main(): Unit = {
       }
 
       case Array("take","ticket",name,surname,routeNr,reqTime) =>{
-        var userExist = true
-        var maybeReqUser = users.find(u => {u.name == name && u.surname == surname})
-        var reqUser:User =  maybeReqUser match {
-          case Some(user) => user
-          case None => {
-            println("USER NOT EXIST")
-            userExist = false
-            User("Noone","Noone",6)
-          }
-        }
-        //FIXME: nwm czy sie tak da ale można jakoś zorbić żeby dało radę podać kilka filtrów
-        // tych samych, np żęby filtorwało różne zniżki naraz, w sensie, i student i full (zobacz storage na dole).
-        // Dodatkowo można przekazać pustą wartość do tego filtra i wtedy się przeszuka tylko
-        // po jednym filtrze. A jak sie nie da to tak jak jest tez jest git chyba
-        // required time powinno byc chyba dateStruct, zorbilem jakis parser jak cos
-        // dodalem w enumie parser zeby mozna discout  podwac  jako Full czy słownie jakos
+        val maybeReqUser = findUser(name, surname)
+        maybeReqUser match {
 
-        var matchedTickets = storage.filterTickets(Some(parseDateStruct(reqTime)),Some(routeNr), None,Some(reqUser.discount))
-        if(matchedTickets.isEmpty)println("NOT FOUND MATCHING TICKETS")
-        else{
-          var ticket = matchedTickets.head
-          storage.transferTicket(reqUser,ticket.user,ticket) //FIXME: tu chyba na odwrut
+          case Some(user) => {
+            var matchedTickets = storage.filterTickets(Some(parseDateStruct(reqTime)), Some(routeNr), None, Some(user.discount))
+            if (matchedTickets.isEmpty) println("NOT FOUND MATCHING TICKETS")
+            else {
+              user.decPoints()
+              val ticket = matchedTickets.head
+              storage.transferTicket(ticket.user, user, ticket)
+            }
+          }
+          case None => println("USER NOT EXIST")
+
         }
       }
 
-      case Array("give","ticket",name,surname) =>{
-        var userExist = true
-        var maybeReqUser = users.find(u => {
-          u.name == name && u.surname == surname
-        })
-        var reqUser: User = maybeReqUser match {
-          case Some(user) => user
-          case None => {
-            println("USER NOT EXIST")
-            userExist = false
-            User("Noone", "Noone", 6)
+      case Array("give","ticket",name,surname,routeNr,city) =>{
+        val maybeReqUser = findUser(name,surname)
+        maybeReqUser match {
+
+          case Some(user) => {
+            user.incPoints()
+            val givenTicket = Ticket(user,city,routeNr)
+            println("TICKET ADDED")
           }
+
+          case None => println("USER NOT EXIST")
+
         }
-        if(userExist){
-          //tu wlasnie chb trzeba przladowac z jakiej przechowyalni do folderu uzytkownika
+      }
+
+      case Array("check","points",name,surname) => {
+        val maybeUser = findUser(name, surname)
+        maybeUser match{
+          case Some(user) => println("USER POINTS: ".concat(user.points.toString))
+          case None => println("USER NOT EXIST")
         }
       }
 

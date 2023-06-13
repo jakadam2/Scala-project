@@ -23,6 +23,7 @@ case class User(val name: String,
   require(name.nonEmpty, "Name must not be empty")
   require(surname.nonEmpty, "Surname must not be empty")
   require(age > 0, "Age must be greater than 0")
+  var amountOfPoints = 0
 
   if (userFolderUrl.isEmpty) {
     val uniqueFolderName = s"user_${UUID.randomUUID()}"
@@ -51,6 +52,15 @@ case class User(val name: String,
     ticket.ticketURL = userFolderUrl + ticket.ticketFileName
     userTickets += ticket
 //    Files.deleteIfExists(Paths.get(sourceFile.toURI)) opcjonalnie przy oddawaniu mozna odkomentowac aby oprozniac poczekalnie
+  }
+
+  def incPoints(): Unit= {
+    amountOfPoints += 1
+  }
+
+  def decPoints(): Unit = {
+    if (amountOfPoints > 0){
+    amountOfPoints -= 1}
   }
   override def toString: String = {
     s"Users.User(name=$name, surname=$surname, age=$age, discount=$discount, userFolderUrl=$userFolderUrl, points=$points, actualTickets=$userTickets)"

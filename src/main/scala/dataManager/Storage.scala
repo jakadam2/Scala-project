@@ -14,6 +14,7 @@ import scala.collection.mutable.ListBuffer
 
 class Storage (var TicketsAvialiable: ListBuffer[Ticket] = ListBuffer[Ticket]()){ //zmieniłem liste na listbuffer bo go da się modyfikować ale jak cos to tu moze byc co innego  
   def updateStorage(): Unit = { //TODO: zbiera wszystkie bilety z uzytkownikow
+    
     TicketsAvialiable = TicketsAvialiable.filter(_.isValid())
   }
 

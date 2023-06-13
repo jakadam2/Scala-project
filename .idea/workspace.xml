@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc3af885-1014-4ea9-9ccd-321ecd05219c" name="Changes" comment="fix">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/Utility/waitingRoomEnum.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_5_2023_1_55_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_5_2023_1_55_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Ticket/CityFilter.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Ticket/CityFilter.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Ticket/CompositeFilter.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Ticket/CompositeFilter.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Ticket/DiscountFilter.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Ticket/DiscountFilter.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Ticket/RouteNumberFilter.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Ticket/RouteNumberFilter.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/Ticket/Ticket.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Ticket/Ticket.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Ticket/TicketFilter.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Ticket/TicketFilter.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Ticket/TimeLeftFilter.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Ticket/TimeLeftFilter.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/Users/User.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Users/User.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Utility/Discount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Utility/Discount.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Utility/dateStruct.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Utility/dateStruct.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/dataManager/Storage.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataManager/Storage.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/main.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Ticket/CityFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Ticket/CityFilter.class" afterDir="false" />
@@ -34,27 +26,21 @@
       <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Ticket/TicketFilter.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Ticket/TicketFilter.tasty" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Ticket/TimeLeftFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Ticket/TimeLeftFilter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Ticket/TimeLeftFilter.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Ticket/TimeLeftFilter.tasty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Users/User$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Users/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Users/User.tasty" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Utility/Discount$$anon$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Utility/Discount$$anon$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Utility/Discount$$anon$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Utility/Discount$$anon$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Utility/Discount$$anon$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Utility/Discount$$anon$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Utility/Discount$$anon$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Utility/Discount$$anon$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Utility/Discount$$anon$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Utility/Discount$$anon$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Utility/Discount$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Utility/Discount$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Users/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Users/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Users/User.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Users/User.tasty" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Utility/Discount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Utility/Discount.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Utility/Discount.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Utility/Discount.tasty" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Utility/dateStruct.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Utility/dateStruct.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Utility/dateStruct.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Utility/dateStruct.tasty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/dataManager/Storage$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/dataManager/Storage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/dataManager/Storage.tasty" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/main$package$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/main$package.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/main$package.tasty" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/main.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Utility/waitingRoomEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Utility/waitingRoomEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Utility/waitingRoomEnum.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Utility/waitingRoomEnum.tasty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/dataManager/Storage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/dataManager/Storage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/dataManager/Storage.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/dataManager/Storage.tasty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/main$package$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/main$package$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/main$package.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/main$package.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/main$package.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/main$package.tasty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/main.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/main.tasty" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,6 +124,8 @@
       <workItem from="1686042919125" duration="29000" />
       <workItem from="1686043459606" duration="1333000" />
       <workItem from="1686148824347" duration="8817000" />
+      <workItem from="1686565382657" duration="1874000" />
+      <workItem from="1686648883895" duration="2966000" />
     </task>
     <task id="LOCAL-00001" summary="first version of tictekst">
       <created>1685966008739</created>
