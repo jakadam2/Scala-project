@@ -6,7 +6,7 @@ import Users.User
 import Utility.Discount
 import jdk.jshell.spi.ExecutionControl.NotImplementedException
 import Utility.dateStruct
-
+import dataManager.TicketTransferer.transfer
 import java.io.{File, FileOutputStream,FileInputStream}
 import java.nio.channels.Channels
 import java.nio.file.{Files, Paths}
@@ -61,22 +61,10 @@ class Storage (var TicketsAvialiable: ListBuffer[Ticket] = ListBuffer[Ticket]())
     //dodaje do listy usera2 ten ticket
     
     user1.userTickets = user1.userTickets.filterNot(_ == ticket)
-    
-    val sourceFile = new File(ticket.ticketURL)
-    val destinationFile = new File(user2.userFolderUrl)
-
-    val sourceChannel = new FileInputStream(sourceFile).getChannel
-    val destinationChannel = new FileOutputStream(destinationFile).getChannel
-
-    destinationChannel.transferFrom(sourceChannel, 0, sourceChannel.size())
-
-    sourceChannel.close()
-    destinationChannel.close()
-
+    transfer(ticket.ticketURL,user2.userFolderUrl)
     ticket.ticketURL = user2.userFolderUrl + ticket.ticketFileName
     user2.userTickets = user2.userTickets :+ ticket
 
-    Files.deleteIfExists(Paths.get(sourceFile.toURI))
   }
 
 

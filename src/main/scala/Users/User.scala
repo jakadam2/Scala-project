@@ -3,13 +3,13 @@ package Users
 import Ticket.Ticket
 import Utility.Discount
 import Utility.Discount.FULL
-
 import java.io.File
 import java.util.UUID
 import scala.collection.mutable.ListBuffer
 import java.io.{File, FileOutputStream,FileInputStream}
 import java.nio.channels.Channels
 import java.nio.file.{Files, Paths}
+import dataManager.TicketTransferer.transfer
 
 case class User(val name: String,
            val surname: String,
@@ -38,20 +38,9 @@ case class User(val name: String,
   def addTicket(ticket: Ticket): Unit={
     // powinno to działać tak że bilet jest kopiowany z poczekalni do folderu 
     // uzytkownika a nastepnie w ticketcie jest zmieniana sciezka do niego
-    val sourceFile = new File(ticket.ticketURL)
-    val destinationFile = new File(userFolderUrl)
-
-    val sourceChannel = new FileInputStream(sourceFile).getChannel
-    val destinationChannel = new FileOutputStream(destinationFile).getChannel
-
-    destinationChannel.transferFrom(sourceChannel, 0, sourceChannel.size())
-
-    sourceChannel.close()
-    destinationChannel.close()
-
+    transfer(ticket.ticketURL,userFolderUrl)
     ticket.ticketURL = userFolderUrl + ticket.ticketFileName
     userTickets += ticket
-//    Files.deleteIfExists(Paths.get(sourceFile.toURI)) opcjonalnie przy oddawaniu mozna odkomentowac aby oprozniac poczekalnie
   }
 
   def incPoints(): Unit= {

@@ -5,6 +5,7 @@ import dataManager.Storage
 import Ticket.*
 import Utility.dateStruct
 import Utility.waitingRoomEnum
+import java.io.File
 
 def parseDateStruct(dateString: String): dateStruct = {
   val parts = dateString.split(":")
@@ -19,6 +20,7 @@ def parseDateStruct(dateString: String): dateStruct = {
 def main(): Unit = {
 
   val users = ListBuffer[User]()
+
   def findUser(name:String,surname:String) = {
     var maybeReqUser = users.find(u => {
       u.name == name && u.surname == surname
@@ -30,7 +32,6 @@ def main(): Unit = {
   while (true){
     var command = readLine()
     var splitedCommand = command.split(" ")
-
     splitedCommand match {
 
       case Array("add","user",name,surname,age) => {

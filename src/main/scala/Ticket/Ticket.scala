@@ -15,7 +15,7 @@ class Ticket(val discount:Discount,// who is let to use ticket
             )
 {
   def this(user: User,city:String,routeNr: String) = {
-    this(user.discount,0,dateStruct(0,20,0),dateStruct(12,0,0),routeNr,city,user,user.userFolderUrl)
+    this(user.discount,0,dateStruct(0,20,0),dateStruct(12,0,0),routeNr,city,user,"D:/Studia/scala/ticket-dealer/ticket-dealer/Data/InFolder/1.jpg")
   }
   
   ticketFileName = this.ticketURL.split("/").last
@@ -29,6 +29,7 @@ class Ticket(val discount:Discount,// who is let to use ticket
   def isValid(): Boolean = {
       timeLeft().hour >= 0 && timeLeft().seconds >= 0 && timeLeft().minute >= 0
   }
+  
   
 
 }
