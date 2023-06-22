@@ -29,7 +29,7 @@ case class User(val name: String,
     val uniqueFolderName = s"user_${UUID.randomUUID()}"
     val defaultFolderPath = s"./Data/UsersFolders/$uniqueFolderName/"
 
-    val userFolder = new File(defaultFolderPath)
+    val userFolder = File(defaultFolderPath)
     if (!userFolder.exists()) {
       userFolder.mkdirs()
     }
