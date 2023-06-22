@@ -12,7 +12,7 @@ import java.nio.channels.Channels
 import java.nio.file.{Files, Paths}
 import scala.collection.mutable.ListBuffer
 
-class Storage (var TicketsAvialiable: ListBuffer[Ticket] = ListBuffer[Ticket]()){ //zmieniłem liste na listbuffer bo go da się modyfikować ale jak cos to tu moze byc co innego  
+class Storage (var TicketsAvialiable: ListBuffer[Ticket] = ListBuffer[Ticket]()){  
 
   val waitingRoomPath = "./Data/WaitingRoom"
   val waitingRoomFile = File(waitingRoomPath)
@@ -21,12 +21,12 @@ class Storage (var TicketsAvialiable: ListBuffer[Ticket] = ListBuffer[Ticket]())
   }
 
 
-  def updateStorage(): Unit = { //TODO: zbiera wszystkie bilety z uzytkownikow
+  def updateStorage(): Unit = { 
     
     TicketsAvialiable = TicketsAvialiable.filter(_.isValid())
   }
 
-  def filterTickets( //przykladowe wywoalnie nizej
+  def filterTickets( 
                      dateStruct: Option[dateStruct] = None,
                      routeNumber: Option[String] = None,
                      location: Option[String] = None,
@@ -61,12 +61,9 @@ class Storage (var TicketsAvialiable: ListBuffer[Ticket] = ListBuffer[Ticket]())
   }
 
 
-  def transferTicket(user1: User, user2: User, ticket: Ticket): Unit = { //z user1 do user2 przkazuje ticket
+  def transferTicket(user1: User, user2: User, ticket: Ticket): Unit = { 
     require(user1.userTickets.contains(ticket), user1.name +" " + user1.surname + " must possess the ticket.")
-    // usuwa ticket z listy w user1
-    //to powinno dzialac tak ze kopjuje z folderu usera1 do folderu usera2 plik o takiej nazwie co ticket.url
-    //zmienia sciezke dostepu do ticketu 
-    //dodaje do listy usera2 ten ticket
+
     
     user1.userTickets = user1.userTickets.filterNot(_ == ticket)
     transfer(ticket.ticketURL,user2.userFolderUrl)
@@ -83,15 +80,3 @@ class Storage (var TicketsAvialiable: ListBuffer[Ticket] = ListBuffer[Ticket]())
 
 }
 
-//wywoałnie przkładowego filtrowania:
-//val date = DateStruct(hour = 12, minute = 0, seconds = 0)
-//val routeNumber = "123"
-//val location = "New York"
-//val discounts = List(Discount.SENIOR, Discount.STUDENT)
-//
-//val filteredTickets = storage.filterTickets(
-//  dateStruct = Some(date),
-//  routeNumber = Some(routeNumber),
-//  location = Some(location),
-//  discount = Some(discounts)
-//)

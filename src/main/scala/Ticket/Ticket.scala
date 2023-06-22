@@ -3,11 +3,11 @@ import Utility.*
 import Users.*
 import java.util.Calendar
 
-class Ticket(val discount:Discount,// who is let to use ticket
-             val nrOfTicket:Int,//  inner ordering number of ticket
-             val ticketTime:dateStruct,//  how much seconds left to out dating
-             var timeOfBuy:dateStruct,// time when tickets was bought
-             val routeNumber:String,//
+class Ticket(val discount:Discount,
+             val nrOfTicket:Int,
+             val ticketTime:dateStruct,
+             var timeOfBuy:dateStruct,
+             val routeNumber:String,
              val city:String,
              var user:User,
              var ticketURL:String,
@@ -31,7 +31,7 @@ class Ticket(val discount:Discount,// who is let to use ticket
     ticketTime.subtract(curDiff)
   }
   def isValid(): Boolean = {
-      timeLeft().hour >= 0 && timeLeft().seconds >= 0 && timeLeft().minute >= 0
+      timeLeft().hour > 0 && timeLeft().seconds > 0 && timeLeft().minute > 0
   }
   
   
