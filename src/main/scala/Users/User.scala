@@ -14,7 +14,7 @@ import dataManager.TicketTransferer.transfer
 case class User(val name: String,
            val surname: String,
            val age: Int,
-           val city:String,
+           val city:String="",
            val discount: Discount = FULL,
            var userFolderUrl: String = "",
            var points: Int = 0,
@@ -37,8 +37,7 @@ case class User(val name: String,
     userFolderUrl = defaultFolderPath
   }
   def addTicket(ticket: Ticket): Unit={
-    // powinno to działać tak że bilet jest kopiowany z poczekalni do folderu 
-    // uzytkownika a nastepnie w ticketcie jest zmieniana sciezka do niego
+
     transfer(ticket.ticketURL,userFolderUrl)
     ticket.ticketURL = userFolderUrl + ticket.ticketFileName
     userTickets += ticket

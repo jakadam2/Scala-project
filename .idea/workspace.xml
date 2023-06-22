@@ -6,24 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="dc3af885-1014-4ea9-9ccd-321ecd05219c" name="Changes" comment="fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/UsersFolders/user_fef4629b-6266-498a-882b-06e65ce0e165/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/UsersFolders/user_fef4629b-6266-498a-882b-06e65ce0e165/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/UsersFolders/user_fef4629b-6266-498a-882b-06e65ce0e165/3.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/UsersFolders/user_fef4629b-6266-498a-882b-06e65ce0e165/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/UsersFolders/user_fef4629b-6266-498a-882b-06e65ce0e165/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/UsersFolders/user_fef4629b-6266-498a-882b-06e65ce0e165/6.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/Ticket/Ticket.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Ticket/Ticket.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Users/User.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Users/User.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Utility/Discount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Utility/Discount.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/dataManager/Storage.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataManager/Storage.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/main.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/StorageSpec.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/StorageSpec.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/TicketSpec.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/TicketSpec.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Ticket/Ticket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Ticket/Ticket.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Ticket/Ticket.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Ticket/Ticket.tasty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/dataManager/Storage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/dataManager/Storage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/dataManager/Storage.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/dataManager/Storage.tasty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/main$package$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/main$package$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/main$package.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/main$package.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/main$package.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/main$package.tasty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/main.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/main.tasty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Users/User$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Users/User$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Users/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Users/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Users/User.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Users/User.tasty" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,17 +65,96 @@
     &quot;last_opened_file_path&quot;: &quot;D:/Studia/scala/ticket-dealer/ticket-dealer&quot;
   }
 }</component>
-  <component name="RunManager">
-    <configuration name="main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="main" />
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Magazyn\Studia\Semestr IV\Scala\Scala-project\Data\Examples" />
+    </key>
+  </component>
+  <component name="RunManager" selected="ScalaTest.ScalaTests in 'scala'">
+    <configuration name="ScalaTests in 'scala'" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="ticket-dealer" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="All in package" />
+      <option name="classBuf">
+        <list>
+          <option value="UserSpec" />
+          <option value="TicketSpec" />
+          <option value="StorageSpec" />
+          <option value="DateStructSpec" />
+          <option value="TicketFilterSpec" />
+          <option value="TicketTrannsfererSpec" />
+        </list>
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StorageSpec.filterTickets should apply filters and return filtered tickets" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="ticket-dealer" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Test name" />
+      <option name="testClassPath" value="StorageSpec" />
+      <option name="testName" value="filterTickets should apply filters and return filtered tickets" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StorageSpec.updateStorage should remove invalid tickets from TicketsAvailable" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="ticket-dealer" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Test name" />
+      <option name="testClassPath" value="StorageSpec" />
+      <option name="testName" value="updateStorage should remove invalid tickets from TicketsAvailable" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketSpec" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="ticket-dealer" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Class" />
+      <option name="testClassPath" value="TicketSpec" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketSpec.isValid should return false when the ticket has expired" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="ticket-dealer" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Test name" />
+      <option name="testClassPath" value="TicketSpec" />
+      <option name="testName" value="isValid should return false when the ticket has expired" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.main" />
+        <item itemvalue="ScalaTest.ScalaTests in 'scala'" />
+        <item itemvalue="ScalaTest.StorageSpec.updateStorage should remove invalid tickets from TicketsAvailable" />
+        <item itemvalue="ScalaTest.StorageSpec.filterTickets should apply filters and return filtered tickets" />
+        <item itemvalue="ScalaTest.TicketSpec" />
+        <item itemvalue="ScalaTest.TicketSpec.isValid should return false when the ticket has expired" />
       </list>
     </recent_temporary>
   </component>
