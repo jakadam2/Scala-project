@@ -6,8 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="dc3af885-1014-4ea9-9ccd-321ecd05219c" name="Changes" comment="fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Examples/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Data/WaitingRoom/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/WaitingRoom/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/WaitingRoom/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/WaitingRoom/3.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/WaitingRoom/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/WaitingRoom/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/WaitingRoom/6.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/Ticket/Ticket.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Ticket/Ticket.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/dataManager/Storage.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataManager/Storage.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/main.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Ticket/Ticket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Ticket/Ticket.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Ticket/Ticket.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Ticket/Ticket.tasty" afterDir="false" />
@@ -105,7 +111,7 @@
       <workItem from="1686819953681" duration="31000" />
       <workItem from="1686820682548" duration="13000" />
       <workItem from="1687426015267" duration="2064000" />
-      <workItem from="1687428198096" duration="1684000" />
+      <workItem from="1687428198096" duration="3185000" />
     </task>
     <task id="LOCAL-00001" summary="first version of tictekst">
       <created>1685966008739</created>

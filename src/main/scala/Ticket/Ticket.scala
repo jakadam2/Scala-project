@@ -1,6 +1,8 @@
 package Ticket
 import Utility.*
 import Users.*
+import dataManager.Storage
+
 import java.util.Calendar
 
 class Ticket(val discount:Discount,// who is let to use ticket

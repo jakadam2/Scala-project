@@ -49,6 +49,7 @@ def main(): Unit = {
 
           case Some(user) => {
             var matchedTickets = storage.filterTickets(Some(parseDateStruct(reqTime)), Some(routeNr), None, Some(user.discount))
+            println(storage.TicketsAvialiable.length)
             if (matchedTickets.isEmpty) println("NOT FOUND MATCHING TICKETS")
             else {
               user.decPoints()
@@ -69,6 +70,7 @@ def main(): Unit = {
             user.incPoints()
             for (tf <- waitingRoomFile.listFiles()){
               var givenTicket = Ticket(user,city,routeNr,"./Data/WaitingRoom/".concat(tf.getName))
+              storage.addTicket(givenTicket)
             }
 
             println("TICKET ADDED")
