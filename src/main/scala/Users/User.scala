@@ -14,6 +14,7 @@ import dataManager.TicketTransferer.transfer
 case class User(val name: String,
            val surname: String,
            val age: Int,
+           val city:String,
            val discount: Discount = FULL,
            var userFolderUrl: String = "",
            var points: Int = 0,
