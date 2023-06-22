@@ -5,21 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc3af885-1014-4ea9-9ccd-321ecd05219c" name="Changes" comment="fix">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/dataManager/TicketTransferer.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Ticket/Ticket.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Ticket/Ticket.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/Users/User.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Users/User.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/dataManager/Storage.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataManager/Storage.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/main.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Ticket/Ticket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Ticket/Ticket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Ticket/Ticket.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Ticket/Ticket.tasty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Users/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Users/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Users/User.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Users/User.tasty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/main$package$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/main$package$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/main$package.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/main$package.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/main$package.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/main$package.tasty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/main.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/main.tasty" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,15 +47,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Studia/scala/ticket-dealer/ticket-dealer&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Studia/scala/ticket-dealer/ticket-dealer"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="main" />
@@ -107,6 +95,8 @@
       <workItem from="1686648883895" duration="3376000" />
       <workItem from="1686815004060" duration="4843000" />
       <workItem from="1686819953681" duration="31000" />
+      <workItem from="1686820682548" duration="13000" />
+      <workItem from="1687426015267" duration="846000" />
     </task>
     <task id="LOCAL-00001" summary="first version of tictekst">
       <created>1685966008739</created>
