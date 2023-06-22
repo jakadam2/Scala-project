@@ -20,6 +20,7 @@ def parseDateStruct(dateString: String): dateStruct = {
 def main(): Unit = {
 
   val users = ListBuffer[User]()
+  val waitingRoomFile = File("./Data/WaitingRoom")
 
   def findUser(name:String,surname:String) = {
     var maybeReqUser = users.find(u => {
@@ -66,7 +67,10 @@ def main(): Unit = {
 
           case Some(user) => {
             user.incPoints()
-            val givenTicket = Ticket(user,city,routeNr)
+            for (tf <- waitingRoomFile.listFiles()){
+              var givenTicket = Ticket(user,city,routeNr,"./Data/WaitingRoom/".concat(tf.getName))
+            }
+
             println("TICKET ADDED")
           }
 

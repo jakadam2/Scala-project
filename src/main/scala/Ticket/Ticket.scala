@@ -14,8 +14,8 @@ class Ticket(val discount:Discount,// who is let to use ticket
              var ticketFileName:String=""
             )
 {
-  def this(user: User,city:String,routeNr: String) = {
-    this(user.discount,0,dateStruct(0,20,0),dateStruct(12,0,0),routeNr,city,user,"D:/Studia/scala/ticket-dealer/ticket-dealer/Data/InFolder/1.jpg")
+  def this(user: User,city:String,routeNr: String,path:String) = {
+    this(user.discount,0,dateStruct(0,20,0),dateStruct(12,0,0),routeNr,city,user,path)
   }
   
   ticketFileName = this.ticketURL.split("/").last
