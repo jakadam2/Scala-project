@@ -6,11 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="dc3af885-1014-4ea9-9ccd-321ecd05219c" name="Changes" comment="fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Examples/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Data/WaitingRoom/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Ticket/Ticket.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Ticket/Ticket.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/WaitingRoom/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Data/UsersFolders/user_fef4629b-6266-498a-882b-06e65ce0e165/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/WaitingRoom/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Data/UsersFolders/user_fef4629b-6266-498a-882b-06e65ce0e165/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/WaitingRoom/3.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/Data/UsersFolders/user_fef4629b-6266-498a-882b-06e65ce0e165/3.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/WaitingRoom/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Data/UsersFolders/user_fef4629b-6266-498a-882b-06e65ce0e165/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/WaitingRoom/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Data/UsersFolders/user_fef4629b-6266-498a-882b-06e65ce0e165/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/WaitingRoom/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Data/UsersFolders/user_fef4629b-6266-498a-882b-06e65ce0e165/6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Users/User.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Users/User.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/dataManager/Storage.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataManager/Storage.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/main.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Ticket/Ticket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Ticket/Ticket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Ticket/Ticket.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Ticket/Ticket.tasty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Users/User$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Users/User$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Users/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Users/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Users/User.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/Users/User.tasty" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/main$package$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/main$package$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/main$package.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/main$package.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/main$package.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/main$package.tasty" afterDir="false" />

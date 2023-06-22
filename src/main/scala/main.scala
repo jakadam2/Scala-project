@@ -35,12 +35,13 @@ def main(): Unit = {
     var splitedCommand = command.split(" ")
     splitedCommand match {
 
-      case Array("add","user",name,surname,age) => {
+      case Array("add","user",name,surname,age,city) => {
         println("USER ADDED")
         println("NAME: ".concat(name))
         println("SURNAME: ".concat(surname))
         println("AGE: ".concat(age))
-        users += User(name,surname,age.toInt)
+        println("CITY: ".concat(city))
+        users += User(name,surname,age.toInt,city)
       }
 
       case Array("take","ticket",name,surname,routeNr,reqTime) =>{
@@ -61,14 +62,15 @@ def main(): Unit = {
         }
       }
 
-      case Array("give","ticket",name,surname,routeNr,city) =>{
+      case Array("give","ticket",name,surname,routeNr) =>{
         val maybeReqUser = findUser(name,surname)
         maybeReqUser match {
 
           case Some(user) => {
             user.incPoints()
             for (tf <- waitingRoomFile.listFiles()){
-              var givenTicket = Ticket(user,city,routeNr,"./Data/WaitingRoom/".concat(tf.getName))
+              val givenTicket = Ticket(user,user.city,routeNr,"./Data/WaitingRoom/".concat(tf.getName))
+              storage.addTicket(givenTicket)
             }
 
             println("TICKET ADDED")
