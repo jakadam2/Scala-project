@@ -141,6 +141,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first version of tictekst" />
-    <option name="LAST_COMMIT_MESSAGE" value="first version of tictekst" />
+    <MESSAGE value="added tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="added tests" />
   </component>
 </project>
