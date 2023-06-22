@@ -1,0 +1,20 @@
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
+[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 0 products, 0 sources, 0 libraries[0m
+[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/Utility/waitingRoomEnum.scala, ${BASE}/src/main/scala/Ticket/RouteNumberFilter.scala, ${BASE}/src/main/scala/Ticket/DiscountFilter.scala, ${BASE}/src/main/scala/dataManager/Storage.scala, ${BASE}/src/main/scala/main.scala, ${BASE}/src/main/scala/dataManager/TicketTransferer.scala, ${BASE}/src/main/scala/Users/User.scala, ${BASE}/src/main/scala/Ticket/Ticket.scala, ${BASE}/src/main/scala/Utility/Discount.scala, ${BASE}/src/main/scala/Ticket/CityFilter.scala, ${BASE}/src/main/scala/Utility/dateStruct.scala, ${BASE}/src/main/scala/Ticket/TimeLeftFilter.scala, ${BASE}/src/main/scala/Ticket/CompositeFilter.scala, ${BASE}/src/main/scala/Ticket/TicketFilter.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(${BASE}/src/main/scala/Ticket/TimeLeftFilter.scala, ${BASE}/src/main/scala/Utility/waitingRoomEnum.scala, ${BASE}/src/main/scala/main.scala, ${BASE}/src/main/scala/Ticket/CityFilter.scala, ${BASE}/src/main/scala/Ticket/DiscountFilter.scala, ${BASE}/src/main/scala/Ticket/CompositeFilter.scala, ${BASE}/src/main/scala/Ticket/Ticket.scala, ${BASE}/src/main/scala/Utility/dateStruct.scala, ${BASE}/src/main/scala/dataManager/Storage.scala, ${BASE}/src/main/scala/Utility/Discount.scala, ${BASE}/src/main/scala/Ticket/TicketFilter.scala, ${BASE}/src/main/scala/dataManager/TicketTransferer.scala, ${BASE}/src/main/scala/Ticket/RouteNumberFilter.scala, ${BASE}/src/main/scala/Users/User.scala), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())[0m
+[0m[[0m[0mdebug[0m] [0m[0mFull compilation, no sources in previous analysis.[0m
+[0m[[0m[0mdebug[0m] [0m[0mall 14 sources are invalidated[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: [0m
+[0m[[0m[0mdebug[0m] [0m[0mRecompiling all sources: number of invalidated sources > 50.0 percent of all sources[0m
+[0m[[0m[0mdebug[0m] [0m[0mcompilation cycle 1[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 14 Scala sources to D:\Magazyn\Studia\Semestr IV\Scala\Scala-project\target\scala-3.2.0\classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mReturning already retrieved and compiled bridge: C:\Users\Krzysiek\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-sbt-bridge\3.2.0\scala3-sbt-bridge-3.2.0.jar.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 51a802e2 for Scala Compiler version 3.2.0[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Program Files\Java\jre1.8.0_341\lib\resources.jar;C:\Program Files\Java\jre1.8.0_341\lib\rt.jar;C:\Program Files\Java\jre1.8.0_341\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_341\lib\jce.jar;C:\Program Files\Java\jre1.8.0_341\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_341\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_341\classes;C:\Users\Krzysiek\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-library_3\3.2.0\scala3-library_3-3.2.0.jar;C:\Users\Krzysiek\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.8\scala-library-2.13.8.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	D:\Magazyn\Studia\Semestr IV\Scala\Scala-project\target\scala-3.2.0\classes[0m
+[0m[[0m[0mdebug[0m] [0m[0mCompilation failed[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
