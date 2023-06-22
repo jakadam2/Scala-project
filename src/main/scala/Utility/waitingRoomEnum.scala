@@ -7,4 +7,20 @@ enum waitingRoomEnum(val path: String) {
   case P4 extends waitingRoomEnum("./Data/Examples/4.jpg")
   case P5 extends waitingRoomEnum("./Data/Examples/5.jpg")
   case P6 extends waitingRoomEnum("./Data/Examples/6.jpg")
+
+  def getPath(input: String): String = {
+    input match {
+      case "P1" => P1.path
+      case "P2" => P2.path
+      case "P3" => P3.path
+      case "P4" => P4.path
+      case "P5" => P5.path
+      case "P6" => P6.path
+      case _ => throw new IllegalArgumentException("Invalid input")
+    }
+  }
 }
+
+
+
+
