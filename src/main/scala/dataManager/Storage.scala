@@ -77,8 +77,6 @@ class Storage (var TicketsAvialiable: ListBuffer[Ticket] = ListBuffer[Ticket]())
 
   def addTicket(ticket: Ticket) = {
     TicketsAvialiable += (ticket)
-    print(TicketsAvialiable)
-
   }
 
 

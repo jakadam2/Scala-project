@@ -44,17 +44,19 @@ def main(): Unit = {
         users += User(name,surname,age.toInt,city)
       }
 
-      case Array("take","ticket",name,surname,routeNr,reqTime) =>{
+      case Array("take","ticket",name,surname,routeNr) =>{
         val maybeReqUser = findUser(name, surname)
         maybeReqUser match {
 
           case Some(user) => {
-            var matchedTickets = storage.filterTickets(Some(parseDateStruct(reqTime)), Some(routeNr), None, Some(user.discount))
+
+            var matchedTickets = storage.filterTickets(None, Some(routeNr), None, Some(user.discount))
             if (matchedTickets.isEmpty) println("NOT FOUND MATCHING TICKETS")
             else {
               user.decPoints()
               val ticket = matchedTickets.head
               storage.transferTicket(ticket.user, user, ticket)
+              println("TICKET GIVEN")
             }
           }
           case None => println("USER NOT EXIST")
@@ -62,14 +64,14 @@ def main(): Unit = {
         }
       }
 
-      case Array("give","ticket",name,surname,routeNr) =>{
+      case Array("give","ticket",name,surname,routeNr,minutes) =>{
         val maybeReqUser = findUser(name,surname)
         maybeReqUser match {
 
           case Some(user) => {
             user.incPoints()
             for (tf <- waitingRoomFile.listFiles()){
-              val givenTicket = Ticket(user,user.city,routeNr,"./Data/WaitingRoom/".concat(tf.getName))
+              val givenTicket = Ticket(user,user.city,routeNr,"./Data/WaitingRoom/".concat(tf.getName),minutes.toInt)
               storage.addTicket(givenTicket)
             }
 
@@ -84,12 +86,12 @@ def main(): Unit = {
       case Array("check","points",name,surname) => {
         val maybeUser = findUser(name, surname)
         maybeUser match{
-          case Some(user) => println("USER POINTS: ".concat(user.points.toString))
+          case Some(user) => println("USER POINTS: ".concat(user.amountOfPoints.toString))
           case None => println("USER NOT EXIST")
         }
       }
 
-      case _ => println("something else")
+      case _ => println("UNKNOW COMMEND")
     }
 
     storage.updateStorage()
